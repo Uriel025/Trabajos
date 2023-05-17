@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+
+<style>
+body{
+    background-color: blueviolet;
+
+
+}
+
+</style>
+
+
+<body>
+
+    <div>
+        <p id="texto">Soy un texto en una etiqueta p</p>
+        <button onclick="cambiarTexto()">Cambiar</button>
+
+        
+        <button onclick="cambiarColorFondo()">Cambiar color de fondo</button>
+
+
+    </div>
+<script>
+        function cambiarColorFondo() {
+  var colores = ["red", "blue", "green", "yellow", "purple", "orange"];
+  var colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+  document.body.style.backgroundColor = colorAleatorio;
+}
+</script>
+    <br><br><br><br>
+
+    <div>
+        <img id="imagen" src="./Imagenes/doge.jpeg" alt="un perro" width="250px">
+        <button onclick="cambiarAtributo()">Cambiar imagen</button>
+    </div> 
+    <br><br><br><br>
+
+    <div>
+        <table id="tabla">
+            <tr>
+                <th>
+                    Alumno
+                </th>
+                <th>
+                    Edad
+                </th>
+            </tr>
+        </table>
+        <button onclick="agregarElemento()">Agregar</button>
+    </div>
+
+    <script>
+        function cambiarTexto() {
+            document.getElementById("texto").innerHTML = "Soy un texto <strong>modificado</strong> dentro de p";
+        }
+    </script>
+
+    <script>
+        function cambiarAtributo() {
+            document.getElementById("imagen").src = "./Imagenes/chiwi.jpg";
+        }
+    </script>
+
+    <script>
+        function agregarElemento() {
+            var numero = Math.floor(Math.random() * (18 - 15) + 15);
+            document.getElementById("tabla").innerHTML += "<tr><td>Nombre</td><td>"+numero+"</td></tr>";
+        }
+    </script>
+</body>
+
+</html>
