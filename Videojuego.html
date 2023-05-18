@@ -3,7 +3,7 @@
 <head>
     <title>GOD OF WAR</title>
     <h1><center><i> <strong> GOD OF WAR RAGNAROK </strong> </i> </center></h1>
-
+<Script src=funciones.js> </Script>
 </head>
 <style>
 
@@ -28,15 +28,7 @@ html{
         <button onclick="cambiarFondo1()"> <strong> Cambiar Fondo</strong></button>
         <button onclick="cambiarFondo2()"> <strong> Regresar Fondo </strong></button>
    
-    <script>
-        function cambiarFondo1() {
-  document.body.style.backgroundColor =  "#185A3F";
-       }
-        function cambiarFondo2() {
-  document.body.style.backgroundColor =  "#3B807B";
-       }
-
-    </script>
+    
 </div>
 
 
@@ -48,35 +40,19 @@ html{
 
 </div>
 
-<script>
-    function cambiarTexto() {
-        document.getElementById("texto").innerHTML = "<strong><h2>  Año de publicacion: 2022</h2></strong>";
-        document.getElementById("texto2").innerHTML = "<strong><h2>Productor: SIE Santa Monica Studio</h2></strong>";
-        
-    }
-</script>
+
 
 
 <!--   Cambiar Imagen    -->
 <div>
-   <center> <img id="imagen1" src="./Imagenes/God1.gif" alt="imagen1" width="420px">
+   <center> <img id="imagen" src="./Imagenes/God1.gif" alt="imagen" width="420px">
     <br>
-    <button onclick="cambiarImagen1()">Cambiar Imagen</button>
-    <button onclick="cambiarImagen2()">Regresar al Anterior Imagen</button>
+    <button onclick="siguienteImagen()">Siguiente Imagen</button>
+    <button onclick="imagenAnterior()">Imagen Anterior</button>
 </center>
 </div>
 
-<script>
-    function cambiarImagen1() {
-        document.getElementById("imagen1").src = "./Imagenes/God2.gif";
-        
-    }
 
-function cambiarImagen2() {
-    document.getElementById("imagen1").src = "./Imagenes/God1.gif";
-}
-
-</script>
 
 
 <!--   Esconder texto    -->
