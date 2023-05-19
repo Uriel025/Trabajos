@@ -54,4 +54,17 @@ var imagenes = [
     mostrarImagen();
   }
 
+//<!--   Esconder texto    -->
+function ocultarMensaje() {
+  document.getElementById("mensaje").innerHTML = "";
+   
+      }
 
+      //<!--   Generar un Texto    -->
+      function escribirTexto(){
+  
+        document.getElementById("miDiv").innerHTML = "<h1>Este texto no lo escribió Uriel, lo escribió JavaScript</h1>";
+        
+      
+      
+       }
