@@ -17,24 +17,24 @@ function cambiarTexto() {
 
 // MOSTRAR IMAGENES
 
-var imagenes = [
-    "./imagenes/God1.gif",
-    "./imagenes/God2.gif",
-    "./imagenes/God3.gif",
-    "./imagenes/God4.gif",
-    "./imagenes/God5.gif"
+var imag = [
+    "./Imagenes/God1.gif",
+    "./Imagenes/God2.gif",
+    "./Imagenes/God3.gif",
+    "./Imagenes/God4.gif",
+    "./Imagenes/God5.gif"
   ];  
   var fotoActual = 0;
   
   function mostrarImagen() {
     var imagen = document.getElementById("imagen");
-    imagen.src = imagenes[fotoActual]; 
+    imagen.src = imag[fotoActual]; 
   }
   
   
     function siguienteImagen() {
          
-   if (fotoActual < imagenes.length - 1) {
+   if (fotoActual < imag.length - 1) {
       fotoActual++;
       } else {
       fotoActual = 0;
@@ -49,7 +49,7 @@ var imagenes = [
       if (fotoActual > 0) {
       fotoActual--;
     } else {
-      fotoActual = imagenes.length - 1;
+      fotoActual = imag.length - 1;
     }
     mostrarImagen();
   }
