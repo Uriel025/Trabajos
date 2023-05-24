@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+</head>
+<body>
+    <form action="./login.html" method="get">
+    <center><h1>Bienvenido</h1></center>
+    <h1 id="mensaje1"></h1>
+    <h2 id="mensaje2"></h2>
+    <h2 id="mensaje3"></h2>
+  <h2><a id="mensaje4" href="mailto: correo"></a></h2>
+  <h2><a id="mensaje5" href="tel:telefono"></a></h2> 
+  <p id="mensaje6"></p> 
+
+   
+    <input type="submit" value="siguiente">
+    <script>
+
+        getParameter = (key) =>  {
+        address = window.location.search;
+        parameterList = new URLSearchParams(address);
+        return parameterList.get(key);
+        
+        }
+        console.log(getParameter("nombre","apellido1","apellido2","correo","telefono,fechaNacimiento"));
+        
+        var nombre = getParameter("nombre");
+       
+        var apellido1 = getParameter("apellido1");
+        
+        var apellido2 = getParameter("apellido2");
+
+        var correo = getParameter("correo");
+
+        var telefono = getParameter("telefono");
+        
+        var fechaNacimiento = getParameter("fechaNacimiento");
+   
+        var usuario = document.getElementById('usuario');
+
+            document.getElementById("mensaje1").innerHTML=nombre;
+         
+            document.getElementById("mensaje2").innerHTML=apellido1;
+    
+            document.getElementById("mensaje3").innerHTML=apellido2;
+           
+            document.getElementById("mensaje4").innerHTML=correo;//para ver un mensaje en ves de el correo como tal pones href=correo
+                
+            document.getElementById("mensaje5").innerHTML=telefono;
+            
+            document.getElementById("mensaje6").innerHTML=edad;
+            
+
+var fechaNacimiento = (document.getElementById("fechaNacimiento").value);
+  var fechaActual = new Date();
+
+  var edad = (fechaActual.getFullYear() - fechaNacimiento.getFullYear() );
+  
+
+
+ </script>  
+
+
+
+
+<script>
+            getParameter = (key) =>  {
+        address = window.location.search;
+        parameterList = new URLSearchParams(address);
+        return parameterList.get(key);
+        
+        }
+console.log(getParameter("contraseña","confirmarcontraseña"));
+
+var contra1 = getParameter("contraseña");
+var contra2 = getParameter("confirmarcontraseña");
+ 
+if (contra1 != contra2) {
+    alert("Las contraseñas no coinciden")
+    
+}
+</script>        
+            
+       
+
+</form>
+</body>
+</html>
