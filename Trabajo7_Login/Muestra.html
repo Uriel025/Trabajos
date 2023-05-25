@@ -17,6 +17,7 @@ background-color:darkcyan;
     <h2 id="mensaje3"></h2>
   <h2><a id="mensaje4" href="mailto: correo"></a></h2>
   <h2><a id="mensaje5" href="tel:telefono"></a></h2> 
+  
   <p id="mensaje6"></p> 
 
    
@@ -41,7 +42,7 @@ background-color:darkcyan;
 
         var telefono = getParameter("telefono");
         
-        var fechaNacimiento = getParameter("fechaNacimiento");
+        
    
         var usuario = document.getElementById('usuario');
 
@@ -55,15 +56,16 @@ background-color:darkcyan;
                 
             document.getElementById("mensaje5").innerHTML=telefono;
             
-            document.getElementById("mensaje6").innerHTML=edad;
             
+            
+var fechaNacimiento = getParameter("fechaNacimiento");
+var fechaActual = new Date();
 
-var fechaNacimiento = (document.getElementById("fechaNacimiento").value);
-  var fechaActual = new Date();
+  var año = fechaNacimiento.split('-');
 
-  var edad = (fechaActual.getFullYear() - fechaNacimiento.getFullYear() );
+  var edad = (fechaActual.getFullYear() - año[0]);
   
-
+  document.getElementById("mensaje6").innerHTML = "Tu edad es de: " + edad + " años.";
 
  </script>  
 
@@ -84,6 +86,7 @@ var contra2 = getParameter("confirmarcontraseña");
  
 if (contra1 != contra2) {
     alert("Las contraseñas no coinciden")
+
     
 }
 </script>        
