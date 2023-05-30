@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>GOD OF WAR</title>
-    <h1><center><i> <strong> GOD OF WAR RAGNAROK </strong> </i> </center></h1>
-<Script src="./JS/funcionVideojuego.js"></Script>
-</head>
-<style>
-
-html{
-     background-color: #2B4270
-
+    <h1>
+      <center>
+        <i> <strong> GOD OF WAR RAGNAROK </strong> </i>
+      </center>
+    </h1>
+    <script src="./JS/funcionVideojuego.js"></script>
+  </head>
+  <style>
+    html {
+      background-color: #2b4270;
     }
 
-    
-
-    body{
-        background-color: #3B807B
-
+    body {
+      background-color: #3b807b;
     }
-
-</style>
-<body>
+  </style>
+  <body>
     <!--   Cambiar Fondo    -->
     <div>
-        <p> <strong> <i> Cambiar fondo</i></strong></p>
-        
-        <button onclick="cambiarFondo1()"> <strong> Cambiar Fondo</strong></button>
-        <button onclick="cambiarFondo2()"> <strong> Regresar Fondo </strong></button>
-   
-    
-</div>
+      <p>
+        <strong> <i> Cambiar fondo</i></strong>
+      </p>
 
+      <button onclick="cambiarFondo1()"><strong> Cambiar Fondo</strong></button>
+      <button onclick="cambiarFondo2()">
+        <strong> Regresar Fondo </strong>
+      </button>
+    </div>
 
-<!--   Cambiar texto    -->
-<div>
-    <p id="texto"> Año de publicacion: 2022</p>
-    <p id="texto2">Productor: SIE Santa Monica Studio </p>
-    <button onclick="cambiarTexto()">Cambiar texto</button>
+    <!--   Cambiar texto    -->
+    <div>
+      <p id="texto">Año de publicacion: 2022</p>
+      <p id="texto2">Productor: SIE Santa Monica Studio</p>
+      <button onclick="cambiarTexto()">Cambiar texto</button>
+    </div>
 
-</div>
+    <!--   Cambiar Imagen    -->
+    <div>
+      <center>
+        <img id="imagen" src="./Imagenes/God1.gif" alt="imagen" width="420px" />
+        <br />
+        <button onclick="siguienteImagen()">Siguiente Imagen</button>
+        <button onclick="imagenAnterior()">Imagen Anterior</button>
+      </center>
+    </div>
 
+    <!--   Esconder texto    -->
+    <div>
+      <h2 id="mensaje">Hola mundo</h2>
+      <button onclick="ocultarMensaje()">Ocultar mensaje</button>
+    </div>
 
+    <br /><br />
 
+    <!--   Generar un Texto    -->
+    <div id="miDiv">
+      <button onclick="escribirTexto()">Generar texto</button>
+    </div>
 
-<!--   Cambiar Imagen    -->
-<div>
-   <center> <img id="imagen" src="./Imagenes/God1.gif" alt="imagen" width="420px">
-    <br>
-    <button onclick="siguienteImagen()">Siguiente Imagen</button>
-    <button onclick="imagenAnterior()">Imagen Anterior</button>
-</center>
-</div>
-
-
-
-
-<!--   Esconder texto    -->
-<div>
-    <h2 id="mensaje">Hola mundo</h2>
-  <button onclick="ocultarMensaje()">Ocultar mensaje</button>
-
-</div>
-
-
-<br><br>
-
-<!--   Generar un Texto    -->
-<div id="miDiv">
-    
-  <button onclick="escribirTexto()">Generar texto</button>
-</div>
-
-  
-
-
-
-    <P><strong><i> Año de publicacion: 2022</i></strong></P>
-<p><Strong><i> Productor: SIE Santa Monica Studio</i></Strong></p>
-<p><i><strong>
-    Reseña:GOD OF WAR RAGNAROK MARCA CONSIGO UNA SOLIDA Y EMOCIONANTE HISTORIA DE PRINCIPIO A FIN. CON UNA CONTINUACIÓN 
-    ESTUPENDA, EN ESTA ENTREGA,MEJORA LAS IMPACTANTES LUCHAS,AÑADIÉNDOLE DIVERAS FUNCIONES CARACTERÍSTICAS DE LA VIOLENCIA CLÁSICA DE 
-    LOS JUEGOS ANTERIORES, AGREGANDO ADEMÁS BATALLAS ÉPICAS Y MUY BIEN ELABORADAS, QUE NOS HARÁN PASAR U BUEN RATO PROPORCIONÁNDOOS 
-    RETOS A MEDIDA QUE SEAMOS MÁS EXIGENTES EN EL COMBATE. LOS ENFRENTAMIENTOS CON JEFES, ALGO POCO VISTO EN SU JUEGO ANTERIOR,ADEMÁS,
-    LOS GRANDES JEFES COMO THOR, ODÍN Y OTROS ADVERSARIOS QUE NO SE LLEGARON A PRESENTAR EN SU MOMENTO, TIENEN LOS MEJORES MOVIMIENTOS
-    EN CUANTO A DESAFÍO Y EXIGENCIA DEL JUGADOR PARA PONER A PRUEBA.LA HISTORIA PRINCIPAL, ENORGULLECE LA SAGA NÓRDICA, EN MOMENTOS,
-    SU DESVIÓ AL CAMBIAR DE PERSONAJE JUGABLE PUEDE PARECER UN TANTO EXTRAÑO, EN CUANTO A LA EVOLUCIÓN Y RELACIÓN DE KRATOS CON SU HIJO
-    , HACIÉNDOLO MÁS HUMANO Y MARCANDO MUCHOS SENTIMIENTOS OCULTOS QUE SE LOGRAN APRECIAR EN PEQUEÑOS DETALLES, TENIENDO ASÍ UN 
-    DESENLACE TAN GRATIFICANTE COMO DIGNO DE UN HOMBRE QUE HA APRENDIDO DE SUS ERRORES.
-</strong></i></p>
-<center><p><i><strong>Calificación: </strong></i></p></center>
-<center><img src="./Imagenes/cali.png"alt="Calificacion Aqui"></center> 
-
-</body>
+    <p>
+      <strong><i> Año de publicacion: 2022</i></strong>
+    </p>
+    <p>
+      <strong><i> Productor: SIE Santa Monica Studio</i></strong>
+    </p>
+    <p>
+      <i
+        ><strong>
+          Reseña:GOD OF WAR RAGNAROK MARCA CONSIGO UNA SOLIDA Y EMOCIONANTE
+          HISTORIA DE PRINCIPIO A FIN. CON UNA CONTINUACIÓN ESTUPENDA, EN ESTA
+          ENTREGA,MEJORA LAS IMPACTANTES LUCHAS,AÑADIÉNDOLE DIVERAS FUNCIONES
+          CARACTERÍSTICAS DE LA VIOLENCIA CLÁSICA DE LOS JUEGOS ANTERIORES,
+          AGREGANDO ADEMÁS BATALLAS ÉPICAS Y MUY BIEN ELABORADAS, QUE NOS HARÁN
+          PASAR U BUEN RATO PROPORCIONÁNDOOS RETOS A MEDIDA QUE SEAMOS MÁS
+          EXIGENTES EN EL COMBATE. LOS ENFRENTAMIENTOS CON JEFES, ALGO POCO
+          VISTO EN SU JUEGO ANTERIOR,ADEMÁS, LOS GRANDES JEFES COMO THOR, ODÍN Y
+          OTROS ADVERSARIOS QUE NO SE LLEGARON A PRESENTAR EN SU MOMENTO, TIENEN
+          LOS MEJORES MOVIMIENTOS EN CUANTO A DESAFÍO Y EXIGENCIA DEL JUGADOR
+          PARA PONER A PRUEBA.LA HISTORIA PRINCIPAL, ENORGULLECE LA SAGA
+          NÓRDICA, EN MOMENTOS, SU DESVIÓ AL CAMBIAR DE PERSONAJE JUGABLE PUEDE
+          PARECER UN TANTO EXTRAÑO, EN CUANTO A LA EVOLUCIÓN Y RELACIÓN DE
+          KRATOS CON SU HIJO , HACIÉNDOLO MÁS HUMANO Y MARCANDO MUCHOS
+          SENTIMIENTOS OCULTOS QUE SE LOGRAN APRECIAR EN PEQUEÑOS DETALLES,
+          TENIENDO ASÍ UN DESENLACE TAN GRATIFICANTE COMO DIGNO DE UN HOMBRE QUE
+          HA APRENDIDO DE SUS ERRORES.
+        </strong></i
+      >
+    </p>
+    <center>
+      <p>
+        <i><strong>Calificación: </strong></i>
+      </p>
+    </center>
+    <center><img src="./Imagenes/cali.png" alt="Calificacion Aqui" /></center>
+  </body>
+</html>
