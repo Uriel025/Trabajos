@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+            </thead>
+            <tbody id="tabla">
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <form >
+            <input type="text" name="nombre" id="nombre">
+            <input type="text" name="apellido" id="apellido">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script>
+        const form = document.querySelector("form")
+
+        const array = [
+            {
+                nombre: "pedro",
+                apellido: "pazcal"
+            },
+            {
+                nombre: "francisco",
+                apellido: "cervantes"
+            }
+        ]
+
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault()
+            const nombre = document.getElementById("nombre").value
+            const apellido = document.getElementById("apellido").value
+
+            const objeto = {
+                nombre,
+                apellido
+            }
+
+            array.push(objeto)
+
+            const filasTabla = array.map(item =>`
+                <tr>
+                    <td>${item.nombre}</td>
+                    <td>${item.apellido}</td>
+                <tr>
+            `).join("")
+
+            tabla.innerHTML = filasTabla
+        })
+
+        
+        
+        const tabla = document.getElementById("tabla")
+
+        
+
+    </script>
+</body>
+</html>
